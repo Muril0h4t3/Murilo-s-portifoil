@@ -1,0 +1,272 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 1em;
+}
+
+.top-bar{
+    background: #111;
+    display: flex;
+    height: auto;
+    width: 100%;
+}
+
+.logo{
+    color: whitesmoke;
+    font-size: 1.5em;
+    padding: 20px;
+    flex: 1;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.menu{
+    flex: 2;
+    height: 85px;
+}
+
+.menu ul{
+    align-items: center;
+    height: 100%;
+    display: flex;
+    list-style-type: none;
+    text-align: center;
+}
+
+.menu li{
+    flex: 1;
+    padding: 0.5em;
+}
+
+.menu li a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 1.5em;
+    padding: 0.1em 0.4em;
+    text-transform: uppercase;
+}
+
+.menu li a:hover{
+    color: rgb(251, 255, 0);
+}
+
+.banner{
+    background: url(../Imagens/art-back-view-backlit-448834.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+}
+
+.banner-text-item{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-size: 1.5em;
+    padding: 1.5em;
+}
+
+.fullscreen{
+    height: 100vh;
+    width: 100vw;
+}
+
+.portifolio{
+    background: url(../Imagens/abstract-architecture-building-1236044.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    width: 100%;
+}
+
+.portifolio-content{
+    align-items: center;
+    color: white;
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.portifolio-content h2{
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+.portifolio-content-item{
+    font-size: 1.5em;
+}
+
+.portifolio-content form{
+    width: 50%;
+    padding: 1em;
+}
+
+.portifolio-content form input{
+    border-radius: 5px;
+    width: 40%;
+    background: cyan;
+    color: black;
+    border: none;
+}
+
+.portifolio-content form input:hover{
+    background: #0099ff;
+}
+
+.portifolio-content form input:active{
+    background: blue;
+}
+
+.eu{
+    display: flex;
+    background: url(../Imagens/background-blur-bokeh-220067.jpg);
+    color: white;
+    align-items: center;
+    justify-content: center
+}
+
+.eu-content h2{
+    padding: 1.5em;
+}
+
+.eu-content-item-text{
+    max-width: 50em;
+    text-align: left;
+    padding: 1em;
+}
+
+.progresso article{
+    padding: 1.5em;
+}
+progress{
+    width: 100%;
+}
+
+.contact{
+    background: url(../Imagens/art-creative-creativity-5836.jpg);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    padding: 10px; 
+    flex-direction: column;
+    align-items: baseline;
+    width: 100%;
+}
+
+.contact-item form input{
+    background: transparent;
+    border: 3px solid black;
+    padding: 3px;
+    width: 100%;
+}
+
+.contact-item textarea{
+    border: 3px solid black;
+    background-color: #ffffff81;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.contact-item input[type="buttom"]{
+    background: #111;
+    color: yellow
+}
+
+.btn {
+    padding: 12px 34px;
+    border: 4px solid black;
+    box-shadow: 4px 4px 0px red;
+    background: transparent;
+    transition: all .2s;
+}
+
+.btn:hover{
+    box-shadow: 0 0 0 transparent
+}
+
+.fas-fa-bars{
+    display: flex;
+    text-align: left;
+}
+
+.toggle{
+    color: #fff;
+    display: none;
+    font-size: 2em;
+    height: 2em;
+    text-align: right;
+    padding: 0.5em;
+    background: #333;
+}
+
+
+@media screen and (max-width: 420px){
+
+    
+    .banner{
+        max-height: 230px;
+    }
+    
+    .logo{
+       display: none;
+    }
+    
+    .top-bar{
+        flex-direction: column;
+    }
+    
+    .menu ul{
+        display: none;
+        flex-direction: column;
+    }
+    
+    .toggle{
+        display: flex;
+        flex-direction: row-reverse
+    }
+    
+    .menu ul.active{
+        display: flex;
+    }
+
+    .active{
+        display: flex;
+    }
+    
+    
+    .banner-text-item{
+        color: transparent;
+    }
+
+    .eu-content{
+        font-size: 0.5em;
+    }
+
+    .eu{
+        max-height: 290px;
+        max-width: 420px;
+    }
+
+    .contact-item textarea{
+        width: 100%;
+    }
+
+    .contact-item form input{
+        width: 100%;
+    }
+
+    .portifolio{
+        font-size: 0.5em;
+
+    }
+
+    .contact-item{
+        width: 100%;
+    }
+}

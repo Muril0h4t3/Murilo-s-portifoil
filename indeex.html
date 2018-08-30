@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="stylesheet" href="Css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Murilo's Protifoil online</title>
+</head>
+
+<body>
+    <header class="top-bar">
+        <div class="logo">
+            <h1>Murilo.</h1>
+        </div>
+        <div class="toggle">
+            <i class="fas-fa-bars">
+                <img src="Imagens/menu-button.png" alt="botão de menu">
+            </i>
+        </div>
+        <nav class="menu">
+            <ul>
+                <li>
+                    <a href="#">Eu</a>
+                </li>
+                <li>
+                    <a href="indeex.html">Home</a>
+                </li>
+                <li>
+                    <a href="#">Contato</a>
+                </li>
+                <li>
+                    <a href="#">Trabalhos</a>
+                </li>
+                <li>
+                    <a href="#">Experiências</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="banner fullscreen">
+            <div class="banner-text">
+                <div class="banner-text-item">
+                    <h2>Desenvolvedor de sistemas</h2>
+                    <p>Se é louco ou são depende apenas de você!</p>
+                </div>
+                <!--Fim da div banner-text-item-->
+            </div>
+            <!--Fim da div banner-text-->
+        </div>
+        <!--Fim da div banner-->
+        <section class="portifolio fullscreen">
+            <div class="portifolio-content">
+                <h2>Meu Portifólio!</h2>
+                <div class="portifolio-content-item">
+                    <p>Ousadia, Alegria e Habilidade</p>
+                </div>
+                <form>
+                    <input type="button" value="Acessar">
+                </form>
+            </div>
+        </section>
+        <!--fim do portifolio-->
+        <section class="eu fullscreen">
+            <div class="eu-content">
+                <h2>Olá! Eu sou Murilo!</h2>
+                <div class="eu-content-item-text">
+                    <p>Nascido no dia 12 de junho de 2001. Eu tenho estudado de tudo especialmente informatica e linguas afim
+                        de me preparar pro mercado de trabalho, sou fluente em inglês, francês e espanhol, alem de compreender
+                        a lingua latina "latim". Sou adepto do Scrum, da metodologia agil e Kanban. Apesar da atual pouca
+                        experiencia com softweres de desenvolvimento tenho completo controle do que aprendi.</p>
+                </div>
+
+                <div class="progresso">
+                    <div>
+                        <h3>Adobe Photoshop</h3>
+                        <progress value="40" max="100"></progress>
+                    </div>
+                    <div>
+                        <h3>Adobe Ilustrator</h3>
+                        <progress value="70" max="100"></progress>
+                    </div>
+                    <div>
+                        <h3>HTML</h3>
+                        <progress value="85" max="100"></progress>
+                    </div>
+                    <div>
+                        <h3>Css</h3>
+                        <progress value="65" max="100"></progress>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fim de eu-->
+        <section class="contact ">
+            <h2>Entre em contato!</h2>
+            <div class="contact-item">
+                <form>
+                    <!-- <h4>E-mail</h4> -->
+                    <div>
+                        <input type="text" minlength="3" maxlength="50" placeholder="Nome Completo">
+                    </div>
+                    <br>
+                    <div>
+                        <input type="email" placeholder="E-mail">
+                    </div>
+                    <div>
+                        <textarea name="msg" cols="30" rows="10" placeholder="Deixe sua mensagem"></textarea>
+                    </div>
+                    <div>
+                        <div class="buttom">
+                            <input class="btn" type="button" value="Enviar">
+                        </div>
+                    </div>
+                </form>
+                <!-- <a href="mailto:"></a> -->
+            </div>
+        </section>
+    </main>
+
+    <div>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+
+        <script>
+            $(document).ready(function () {
+                $('.toggle').click(function () {
+                    $('ul').toggleClass('active');
+                })
+            })
+        </script>
+    </div>
+
+</html>
